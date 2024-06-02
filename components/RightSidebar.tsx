@@ -11,7 +11,8 @@ return (
                 <div className='profile'>
                     <div className='profile-img'>
                         <span className='text-5xl font-bold text-blue-500'>
-                            {user.firstName[0]}
+                            {user.firstName[0]} 
+                            <span className='text-3xl font-bold'>{user.lastName[0]}</span>
                         </span>
                     </div>
                     <div className='profile-details'>
