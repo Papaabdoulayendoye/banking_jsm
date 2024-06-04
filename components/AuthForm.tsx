@@ -12,11 +12,14 @@ import {
 import CustomInput from './CustomInput';
 import { authFormSchema } from '@/lib/utils';
 import { Loader2 } from "lucide-react";
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
+import { signIn, signUp } from '@/lib/actions/user.actions';
 
 const AuthForm = ({ type }: { type: string }) => {
+  const router = useRouter();
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  
   const formSchema = authFormSchema(type);
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -37,15 +40,17 @@ const AuthForm = ({ type }: { type: string }) => {
         const newUser = await signUp(data);
         setUser(newUser);
       }
+
+      // Sign Ip with appwite
       if (type === 'sign-in') {
+        console.log(data);
         const response = await signIn({
           email : data.email,
           password : data.password
         });
-        const router = useRouter();
         if(response) router.push('/');
       }
-      console.log(data);
+      
       setIsLoading(false)
       
     } catch (error) {

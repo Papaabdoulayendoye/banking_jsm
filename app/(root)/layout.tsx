@@ -1,8 +1,10 @@
 import MobileNav from '@/components/MobileNav';
 import Sidebar from '@/components/Sidebar';
+import { getLoggedInUser } from '@/lib/actions/user.actions';
 import type { Metadata } from "next";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
 import Image from 'next/image';
+import { redirect, useRouter } from 'next/navigation';
 
 const inter = Inter({ subsets: ["latin"] });
 const ibmPlexSerif = IBM_Plex_Serif(
@@ -17,15 +19,13 @@ title: "Horizon",
 description: "Horizon is a modern banking platform for everyone",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 children,
 }: Readonly<{
 children: React.ReactNode;
 }>) {
-    const loggedin = {
-        firstName : 'Pipo',
-        lastName : 'Ndoye'
-    }
+    const loggedin =  await getLoggedInUser();
+    if(!loggedin) redirect('/sign-in');
 return (
 <main className='flex w-full h-screen font-inter'>
     <Sidebar user={loggedin} />

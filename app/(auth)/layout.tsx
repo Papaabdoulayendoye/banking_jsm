@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ["latin"] });
 const ibmPlexSerif = IBM_Plex_Serif(
@@ -20,9 +21,13 @@ children,
 children: React.ReactNode;
 }>) {
 return (
-<main>
-    
+<main className='flex min-h-screen w-full justify-between font-inter'>
     {children}
+    <div className='auth-asset'>
+        <div className=''>
+            <Image alt='Auth image' src='/assets/icons/auth-image.svg' height={500} width={500} />
+        </div>
+    </div>
 </main>
 );
 }
