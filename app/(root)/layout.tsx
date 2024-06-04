@@ -34,7 +34,7 @@ return (
         <div className='root-layout'>
             <Image src={'/assets/icons/logo.svg'} height={30} width={30} alt='menu icon'/>
             <div>
-                <MobileNav user={loggedin}/>
+                <MobileNav user={loggedin!}/>
             </div>
         </div>
     {children}

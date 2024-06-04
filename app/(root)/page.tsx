@@ -6,8 +6,6 @@ import React from 'react'
 
 const Home = async () => {
     const loggedin = await getLoggedInUser();
-    console.log(loggedin);
-    
     return (
         <section className='home'>
             <div className='home-content'>
@@ -27,7 +25,7 @@ const Home = async () => {
                 RECENTS TRANSACTIONS
             </div>
             <RightSidebar 
-                user={loggedin} 
+                user={loggedin!} 
                 banks={[
                         { currentBalance : 125.501},
                         {currentBalance : 500.75}

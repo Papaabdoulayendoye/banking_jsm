@@ -34,7 +34,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
             }
             USER
         </nav>
-        <Footer user={user} type='mobile' />
+        <Footer user={user!} type='mobile' />
     </section>
   )
 }

@@ -44,7 +44,7 @@ return (
                     </div>
                     {banks[1] && (
                         <div className='absolute right-0 top-8 w-[90%]'>
-                            <BankCard />
+                            {/* <BankCard /> */}
                         </div>
                     )}
                 </div>
