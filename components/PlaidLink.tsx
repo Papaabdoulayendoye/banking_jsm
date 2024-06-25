@@ -3,23 +3,24 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { Button } from './ui/button'
 import { PlaidLinkOnSuccess, PlaidLinkOptions, usePlaidLink } from "react-plaid-link";
 import { useRouter } from 'next/navigation';
-import { createLinkToken } from '@/lib/actions/user.actions';
+import { createLinkToken, exhangePublicToken } from '@/lib/actions/user.actions';
 const PlaidLink = ({user, variant}:PlaidLinkProps) => {
   const [token, setToken] = useState('');
-  const route = useRouter()
+  const router = useRouter()
   useEffect(() => {
     const getLinkToken = async () => {
       const data = await createLinkToken(user);
       setToken(data?.linkToken);
     }
-  }, []);
+    getLinkToken();
+  }, [user]);
 
   const onSuccess = useCallback<PlaidLinkOnSuccess>( async (public_token:string) => {
-    // await exhangePublicToken({
-    //   publicToken : public_token,
-    //   user
-    // })
-    // router.push('/');
+    await exhangePublicToken({
+      publicToken : public_token,
+      user
+    })
+    router.push('/');
   },[user]);
 
   const config:PlaidLinkOptions = {
