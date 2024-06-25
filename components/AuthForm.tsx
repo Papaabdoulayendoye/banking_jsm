@@ -54,7 +54,7 @@ const AuthForm = ({ type }: { type: string }) => {
         }
         const newUser = await signUp(userData);
         setUser(newUser);
-        if(newUser) router.push('/sign-in');
+        // if(newUser) router.push('/sign-in');
       }
 
       // Sign Ip with appwite
