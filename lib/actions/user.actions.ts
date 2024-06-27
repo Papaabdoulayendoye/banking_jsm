@@ -196,7 +196,7 @@ sharableId,
 
 
 
-export const exhangePublicToken = async ({publicToken,user}:exchangePublicTokenProps) => {
+export const exchangePublicToken = async ({publicToken,user}:exchangePublicTokenProps) => {
 try {
   const response = await plaidClient.itemPublicTokenExchange({public_token: publicToken});
   
