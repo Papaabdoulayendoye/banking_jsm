@@ -8,8 +8,8 @@ import React from 'react'
 
 const Home = async ({searchParams:{id,page}}:SearchParamProps) => {
     const loggedin = await getLoggedInUser();
-    const currentPage = Number(page as string) || 1;
     const accounts = await getAccounts({userId : loggedin?.$id});
+    const currentPage = Number(page as string) || 1;
 
     if (!accounts) {
         return;

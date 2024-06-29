@@ -54,12 +54,10 @@ const AuthForm = ({ type }: { type: string }) => {
         }
         const newUser = await signUp(userData);
         setUser(newUser);
-        // if(newUser) router.push('/sign-in');
       }
 
       // Sign Ip with appwite
       if (type === 'sign-in') {
-        console.log(data);
         const response = await signIn({
           email : data.email,
           password : data.password
@@ -70,9 +68,7 @@ const AuthForm = ({ type }: { type: string }) => {
       setIsLoading(false)
       
     } catch (error) {
-      console.log('====================================');
       console.log("ERROR", error);
-      console.log('====================================');
     }finally{
       setIsLoading(false)
     }
