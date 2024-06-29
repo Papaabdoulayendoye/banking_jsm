@@ -1,8 +1,47 @@
+import HeaderBox from '@/components/HeaderBox'
+import TransactionsTable from '@/components/TransactionsTable';
+import { getAccount, getAccounts } from '@/lib/actions/bank.actions';
+import { getLoggedInUser } from '@/lib/actions/user.actions';
+import { formatAmount } from '@/lib/utils';
 import React from 'react'
 
-const TransactionHistory = () => {
+const TransactionHistory = async ({searchParams: {id, page} } : SearchParamProps) => {
+    const loggedin = await getLoggedInUser();
+    const accounts = await getAccounts({userId : loggedin?.$id});
+    const currentPage = Number(page as string) || 1;
+
+    if (!accounts) {
+        return;
+    }
+    const accountsData = accounts?.data;
+    const appwriteItemId = (id as string) || accountsData[0]?.appwriteItemId;
+    const account = await getAccount({appwriteItemId});
   return (
-    <div>TransactionHistory</div>
+    <div className='transactions'>
+      <div className='transactions-header'>
+        <HeaderBox key={'transaction'} 
+        title='Transaction History' 
+        subtext='See your bank details and transactions.' />
+      </div>
+      <div className='space-y-6'>
+        <div className='transactions-account'>
+          <div className='gap-2 flex flex-col'>
+            <h2 className='text-16 font-bold text-white'>{account?.data.name}</h2>
+            <p className='text-14 text-blue-25'>{account?.data.officialName}</p>
+            <p className='text-14 font-semibold text-white tracking-[1.1px]'>●●●● ●●●● ●●●● {account?.data.mask}</p>
+          </div>
+          <div className='transactions-account-balance'>
+            <p className='text-14'>Current balance</p>
+            <p className='text-14 text-center font-bold'>{formatAmount(account?.data.currentBalance)}</p>
+          </div>
+        </div>
+
+        <section className='flex w-full flex-col gap-6'>
+          <TransactionsTable transactions={account?.transactions}/>
+        </section>
+
+      </div>
+    </div>
   )
 }
 

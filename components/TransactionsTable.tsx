@@ -31,7 +31,7 @@ return (
 );
 };
 
-const tsTable = ({ transactions }: TransactionTableProps) => {
+const TransactionsTable = ({ transactions }: TransactionTableProps) => {
 return (
 <Table>
     <TableHeader className="bg-[#f9fafb]">
@@ -98,4 +98,4 @@ return (
 );
 };
 
-export default tsTable;
+export default TransactionsTable;
