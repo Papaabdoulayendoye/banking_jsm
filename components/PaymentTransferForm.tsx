@@ -51,21 +51,15 @@ defaultValues: {
 
 const submit = async (data: z.infer<typeof formSchema>) => {
 setIsLoading(true);
-console.log("data",data);
-// console.log("dataSenderBank",data?.senderBank);
-
 try {
     const receiverAccountId = decryptId(data.sharableId);
-    console.log("receiverAccountId", receiverAccountId);
-    
+
     const receiverBank = await getBankByAccountId({
     accountId: receiverAccountId,
     });
-    console.log("receiverBank",receiverBank);
-    
+
     const senderBank = await getBank({ documentId: data.senderBank });
-    console.log("senderBank",senderBank);
-    
+
     const transferParams = {
     sourceFundingSourceUrl: senderBank.fundingSourceUrl,
     destinationFundingSourceUrl: receiverBank.fundingSourceUrl,
@@ -73,8 +67,7 @@ try {
     };
     // create transfer
     const transfer = await createTransfer(transferParams);
-    console.log(transfer);
-    
+
     // create transfer transaction
     if (transfer) {
     const transaction = {
@@ -92,13 +85,11 @@ try {
     if (newTransaction) {
         form.reset();
         router.push("/");
-    }else{
+    } else {
         console.log("error");
-        
     }
-    }else{
-        console.log("transfer erorr ");
-        
+    } else {
+    console.log("transfer erorr ");
     }
 } catch (error) {
     console.error("Submitting create transfer request failed: ", error);
