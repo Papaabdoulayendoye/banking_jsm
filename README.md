@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <img src="[https://github-production-user-asset-6210df.s3.amazonaws.com/151519281/327337853-3c03519c-7ebd-4539-b598-49e63d1770b4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T134653Z&X-Amz-Expires=300&X-Amz-Signature=0e7953902813d881d9f24e6b317f20732dd622c9ad2b2076a33304b78672c761&X-Amz-SignedHeaders=host ](https://github-production-user-asset-6210df.s3.amazonaws.com/151519281/327337853-3c03519c-7ebd-4539-b598-49e63d1770b4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T134322Z&X-Amz-Expires=300&X-Amz-Signature=7743b0318be2790fa8d2418180b1449ca6d6b55e157ca770025cb23db46d127a&X-Amz-SignedHeaders=host)" alt="Banking App Banner" width="100%" />
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/151519281/327337853-3c03519c-7ebd-4539-b598-49e63d1770b4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T135832Z&X-Amz-Expires=300&X-Amz-Signature=5b1243fa3ba8c861a6f8bcc521c5d079f45a7f1b2bb082e0ef8fa8d09352b83a&X-Amz-SignedHeaders=host" alt="Banking App Banner" width="100%" />
   <br />
   <div>
     <img src="https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white " alt="Next.js" />
