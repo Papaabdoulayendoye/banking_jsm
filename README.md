@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://youtu.be/PuOVqP_cjkE?feature=shared" target="_blank">
-      <img src="[https://github.com/adrianhajdin/banking/assets/151519281/3c03519c-7ebd-4539-b598-49e63d1770b4](https://github-production-user-asset-6210df.s3.amazonaws.com/151519281/327337853-3c03519c-7ebd-4539-b598-49e63d1770b4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T134322Z&X-Amz-Expires=300&X-Amz-Signature=7743b0318be2790fa8d2418180b1449ca6d6b55e157ca770025cb23db46d127a&X-Amz-SignedHeaders=host)" alt="Project Banner">
+      <img src="[[https://github.com/adrianhajdin/banking/assets/151519281/3c03519c-7ebd-4539-b598-49e63d1770b4](https://github-production-user-asset-6210df.s3.amazonaws.com/151519281/327337853-3c03519c-7ebd-4539-b598-49e63d1770b4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T134322Z&X-Amz-Expires=300&X-Amz-Signature=7743b0318be2790fa8d2418180b1449ca6d6b55e157ca770025cb23db46d127a&X-Amz-SignedHeaders=host)](https://github-production-user-asset-6210df.s3.amazonaws.com/151519281/327337853-3c03519c-7ebd-4539-b598-49e63d1770b4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T134322Z&X-Amz-Expires=300&X-Amz-Signature=7743b0318be2790fa8d2418180b1449ca6d6b55e157ca770025cb23db46d127a&X-Amz-SignedHeaders=host)" alt="Project Banner">
     </a>
   <br />
   
