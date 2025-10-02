@@ -1,77 +1,40 @@
 <div align="center">
   <br />
-    <p>
-      <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/151519281/327337853-3c03519c-7ebd-4539-b598-49e63d1770b4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T134653Z&X-Amz-Expires=300&X-Amz-Signature=0e7953902813d881d9f24e6b317f20732dd622c9ad2b2076a33304b78672c761&X-Amz-SignedHeaders=host" alt="Project Banner">
-    </p>
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/151519281/327337853-3c03519c-7ebd-4539-b598-49e63d1770b4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T134653Z&X-Amz-Expires=300&X-Amz-Signature=0e7953902813d881d9f24e6b317f20732dd622c9ad2b2076a33304b78672c761&X-Amz-SignedHeaders=host" alt="Banking App Banner" width="100%" />
   <br />
-  
   <div>
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-    <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
+    <img src="https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/-Plaid-2C7CE6?style=for-the-badge&logo=plaid&logoColor=white" alt="Plaid" />
+    <img src="https://img.shields.io/badge/-Dwolla-142330?style=for-the-badge&logo=dwolla&logoColor=white" alt="Dwolla" />
   </div>
-
-  <h3 align="center">A Fintech Bank Application</h3>
+  <h3 align="center">💼 Banking App – Plateforme FinTech Full-Stack</h3>
+  <p align="center">
+    Application bancaire complète connectée à Plaid & Dwolla • Next.js • TypeScript • Tailwind
+  </p>
 </div>
-
-## 📋 <a name="table">Table of Contents</a>
-
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Code Snippets to Copy](#snippets)
-6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
-
-## 🚨 Tutorial
-
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/PuOVqP_cjkE?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
-
-## <a name="introduction">🤖 Introduction</a>
-
-Built with Next.js, Horizon is a financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether. 
-
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+** members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- Next.js
-- TypeScript
-- Appwrite
-- Plaid
-- Dwolla
-- React Hook Form
-- Zod
-- TailwindCSS
-- Chart.js
-- ShadCN
-
-## <a name="features">🔋 Features</a>
-
-👉 **Authentication**: An ultra-secure SSR authentication with proper validations and authorization
-
-👉 **Connect Banks**: Integrates with Plaid for multiple bank account linking
-
-👉 **Home Page**: Shows general overview of user account with total balance from all connected banks, recent transactions, money spent on different categories, etc
-
-👉 **My Banks**: Check the complete list of all connected banks with respective balances, account details
-
-👉 **Transaction History**: Includes pagination and filtering options for viewing transaction history of different banks
-
-👉 **Real-time Updates**: Reflects changes across all relevant pages upon connecting new bank accounts.
-
-👉 **Funds Transfer**: Allows users to transfer funds using Dwolla to other accounts with required fields and recipient bank ID.
-
-👉 **Responsiveness**: Ensures the application adapts seamlessly to various screen sizes and devices, providing a consistent user experience across desktop, tablet, and mobile platforms.
-
-and many more, including code architecture and reusability. 
-
-## <a name="quick-start">🤸 Quick Start</a>
+📌 À propos
+Banking JS App est une plateforme bancaire personnelle développée en Next.js et TypeScript, permettant de :
+Connecter plusieurs comptes bancaires via Plaid
+Visualiser les soldes et transactions en temps réel
+Effectuer des transferts d’argent via Dwolla
+Gérer les finances personnelles avec une interface moderne et responsive
+Projet réalisé dans le cadre de ma formation Master TNSID – disponible en open source.
+🧪 Stack technique
+Table
+Copy
+Côté	Technologie
+Frontend	Next.js 14, TypeScript, Tailwind CSS, ShadCN, React Hook Form
+Backend	Next.js API Routes, Appwrite (auth & DB), Plaid (bank data), Dwolla (payments)
+Validation	Zod
+UI/UX	Chart.js, responsive design, dark/light mode
+Déploiement	Vercel
+✨ Fonctionnalités clés
+🔐 Authentification sécurisée (SSR + Appwrite)
+🏦 Connexion multi-banques via Plaid
+💰 Tableau de bord : solde total, dépenses par catégorie, graphiques
+📜 Historique des transactions avec filtres et pagination
+💸 Transfert d’argent entre utilisateurs via Dwolla
+📱 Responsive : mobile, tablette, desktop
+🧩 Architecture modulaire : composants réutilisables, séparation des responsabilités
